@@ -9,7 +9,8 @@ html, body {
   font-size: 12px;
   height: 100%;
   font-family: 'Open Sans', serif;
-  background: url("../images/father_john_web.jpg");
+  background: url("../images/father_john_web.jpg") repeat-x;
+  background-position-x: 110px;
 }
 
 p {
@@ -72,8 +73,11 @@ li {
 /*================================================*/
 /* Header                                         */
 /*================================================*/
+header, footer {
+  background-color: rgba(131, 129, 128, .5);
+}
 header {
-  background-color: rgba(131, 129, 128, .7);
+  background-color: rgba(131, 129, 128, .5);
   height: 5em;
 }
 
@@ -117,7 +121,7 @@ div {
 
 footer {
   height:15em;
-  background-color: gray;
+  background-color: rgb(66, 65, 65);
   width:100%;
   margin:0;
 }
@@ -133,7 +137,7 @@ footer div {
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+    /*.row                                        { margin-bottom: 20px; }*/
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
